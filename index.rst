@@ -15,12 +15,8 @@ Contents:
    chapter0
    chapter1
    chapter2
-<<<<<<< HEAD
    chapter4
-
-=======
    chapter3
->>>>>>> add chapter 3
 
 
 Indices and tables
