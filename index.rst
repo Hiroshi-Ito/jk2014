@@ -12,11 +12,10 @@ Contents:
    :maxdepth: 3
    :numbered:
    
-   chapter0
    chapter1
-   chapter2
-   chapter4
-   chapter3
+
+
+
 
 
 Indices and tables
