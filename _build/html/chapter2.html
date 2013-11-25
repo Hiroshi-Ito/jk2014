@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>2. X Window &mdash; jk2014 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="jk2014 0.1 documentation" href="index.html" />
+    <link rel="next" title="3. UNIX システムの基本的な利用法" href="chapter3.html" />
+    <link rel="prev" title="1. UNIX システムの基本的な利用法" href="chapter1.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="chapter3.html" title="3. UNIX システムの基本的な利用法"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="chapter1.html" title="1. UNIX システムの基本的な利用法"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">jk2014 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="x-window">
+<h1>2. X Window<a class="headerlink" href="#x-window" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>2.1. 実習内容<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>X Window システムの理解</li>
+<li>ウインドウの操作</li>
+<li>GNOME 端末の操作</li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h2>2.2. 課題<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>他のウインドウで完全に隠されたウインドウを見つけて、最前面に表示させる方法についてレポートにまとめなさい。</p>
+</div>
+<div class="section" id="id3">
+<h2>2.3. 実習の手順<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>解説を参考にしながら実習を進めて下さい。</p>
+<div class="section" id="id4">
+<h3>2.3.1. X Windowの操作<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>X Window のデスクトップ環境（GUI, 解説参照）として、現在のシステムではGNOMEと呼ばれるソフトウェアを用いています。GNOMEは多くの機能を持ちますが、ここではごく基本的な機能について説明します。</p>
+<p>UNIX の特徴として、種々の設定が容易に変更できることが挙げられます。
+X Window に関しても、システムを使いやすくする目的で設定が変更されることが頻繁に起きます。従って、画面表示が説明と多少異なっても気にせず、大づかみに機能を理解するようにして下さい。</p>
+<dl class="docutils">
+<dt><strong>用語の説明</strong></dt>
+<dd>最初に、説明で使う言葉の意味を列挙しておきます。</dd>
+<dt><strong>マウスボタンの操作</strong></dt>
+<dd><dl class="first last docutils">
+<dt>マウスボタンには以下のように数種類の操作法があります。</dt>
+<dd><dl class="first last docutils">
+<dt><strong>プッシュ</strong></dt>
+<dd>単に押すこと。以下の説明では、「押す」という言葉で表します。</dd>
+<dt><strong>リリース</strong></dt>
+<dd>単に離すこと。以下の説明では、「離す」という言葉で表します。</dd>
+<dt><strong>クリック</strong></dt>
+<dd>マウスカーソルを移動させずに同じ位置でボタンを押して離すこと。（Windows で多用する「ダブルクリック」は瞬間的に２回クリックすることです。X Window ではダブルクリックはほとんど使いませんので注意してください。)</dd>
+<dt><strong>ドラッグ</strong></dt>
+<dd>ボタンを押しながら、マウスを移動させること。</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt><strong>ウィンドウの部分の名前*</strong></dt>
+<dd><p class="first">画面内の各部分は以下のように呼ばれます(図2.1、2.2)。</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/desktop-layout12.png"><img alt="_images/desktop-layout12.png" src="_images/desktop-layout12.png" style="width: 70%;" /></a>
+<p class="caption"><strong>図 2.1</strong>: デスクトップの各部分の名前</p>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/window-layout12.png"><img alt="_images/window-layout12.png" src="_images/window-layout12.png" style="width: 70%;" /></a>
+<p class="caption"><strong>図 2.2</strong>: window の各部分の名前</p>
+</div>
+<dl class="docutils">
+<dt><strong>メニューバー</strong> :</dt>
+<dd>画面最上部の、メニューが配置された部分。</dd>
+<dt><strong>ルートウィンドウ</strong> :</dt>
+<dd>画面中央部の、全てのウィンドウの背景にあたる部分。</dd>
+<dt><strong>タスクバー</strong> :</dt>
+<dd>画面最上部の、ウィンドウのアイコン（後述）が表示される部分。</dd>
+<dt><strong>ウィンドウ</strong> :</dt>
+<dd>個々のクライアントプロセス（解説参照）に対応する描画範囲。通常は長方形。</dd>
+<dt><strong>タイトルバー</strong> :</dt>
+<dd>ウィンドウの上部にある色のついた部分。</dd>
+<dt><strong>アプリケーションボタン</strong> :</dt>
+<dd>タイトルバー左端の四角い部分。</dd>
+<dt><strong>ミニマイズボタン</strong> :</dt>
+<dd>タイトルバー右端左部の四角い部分（&#8221;−&#8221;記号）。</dd>
+<dt><strong>マキシマイズボタン</strong> :</dt>
+<dd>タイトルバー右端中央の四角い部分（&#8221;□&#8221;記号）。</dd>
+<dt><strong>クローズボタン</strong> :</dt>
+<dd>タイトルバー右端右部の四角い部分（&#8221;Ｘ&#8221;記号）。</dd>
+<dt><strong>ボーダ</strong> :</dt>
+<dd>ウィンドウ四辺の縁。</dd>
+<dt><strong>マウスカーソル</strong> :</dt>
+<dd>マウスによって画面上で移動するマーク。状況に応じて形が変化する。</dd>
+</dl>
+<div class="last figure align-center">
+<a class="reference internal image-reference" href="_images/focus-defocus12.png"><img alt="_images/focus-defocus12.png" src="_images/focus-defocus12.png" style="width: 70%;" /></a>
+<p class="caption"><strong>図 2.3</strong>: windowの状態</p>
+</div>
+</dd>
+<dt><strong>状態</strong></dt>
+<dd><p class="first">ウィンドウの状態としては以下の用語を用います。</p>
+<dl class="last docutils">
+<dt><strong>フォーカスされている</strong> :</dt>
+<dd>そのウィンドウが選択されており、キーボードやマウスからの入力が受け付けられる状態。同時に複数のウィンドウがフォーカスされることはない。ここでの設定では、マウスカーソルがウィンドウ内に入った状態でクリックされたときにフォーカスされ、フォーカスされるとタイトルバーと、ボーダーの色が変化する。</dd>
+<dt><strong>最前面に表示</strong> :</dt>
+<dd>ウィンドウが重なっている場合、他のどのウィンドウによっても隠されていない状態を「最前面に表示されている」と言う。</dd>
+<dt><strong>最背面に表示</strong> :</dt>
+<dd>ウィンドウが重なっている場合、ルートウィンドウ以外の他のどのウィンドウよりも後に表示されている状態を「最背面に表示されている」と言う。</dd>
+</dl>
+</dd>
+</dl>
+<p><strong>ウィンドウの基本操作</strong></p>
+<blockquote>
+<div><dl class="docutils">
+<dt><strong>アイコン化</strong>:</dt>
+<dd><blockquote class="first">
+<div>ウィンドウの表示を消し、代わりとなる小さな絵記号（アイコン）を表示することを指します。
+現在のシステムでは、ウィンドウのアイコンは常にタスクバー内に表示されています(図 2.4)。
+マウスカーソルをミニマイズボタンの上に移動させ、マウスの左ボタンをクリックすると、そのウィンドウが消え、表示はアイコンのみとなります。
+このアイコンは使用していないウィンドウを小さく表示して画面を整理するためのものです。Windows のアイコンは、コマンドやファイルに対応しますが、
+この場合のアイコンは、クライアントプロセスに対応することに注意してください。</div></blockquote>
+<div class="last figure align-center">
+<a class="reference internal image-reference" href="_images/iconified12.png"><img alt="_images/iconified12.png" src="_images/iconified12.png" style="width: 70%;" /></a>
+<p class="caption"><strong>図 2.4</strong>: タスクバー内のアイコン</p>
+</div>
+</dd>
+<dt><strong>ウィンドウの復元</strong>:</dt>
+<dd>アイコンの上にマウスカーソルを移動し、左ボタンをクリックすると、アイコンが消え、元のウィンドウが元の位置に現れます。このときのウィンドウは最前面に表示され、他のウィンドウと重なる場合はそれらを隠します。</dd>
+<dt><strong>大きさの変更</strong>:</dt>
+<dd>ボーダの上にマウスカーソルを移動させ、左ボタンでドラッグすると、ウィンドウのサイズが変ります。</dd>
+<dt><strong>位置の変更</strong>:</dt>
+<dd>タイトルバーをマウスの左ボタンでドラッグするとウィンドウを移動することができます。タイトルバー上で左ボタンを押した時点で、そのウィンドウは最前面に表示されます。</dd>
+<dt><strong>最前面に表示</strong>:</dt>
+<dd>最前面に表示されていないウィンドウの上でマウスを左クリックすると、そのウィンドウが最前面に表示され、他のウィンドウを隠します。</dd>
+</dl>
+</div></blockquote>
+<dl class="docutils">
+<dt><strong>ウィンドウメニューの実行</strong></dt>
+<dd><p class="first">ウィンドウのアプリケーションボタンを押すと、図 2.
+5のようなメニュー画面が表示されます。ウィンドウの最大化、最小化、最前面表示、移動、サイズの変更などは、このメニューを選択して行なうことも出来ます。</p>
+<blockquote class="last">
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="_images/menu12.png"><img alt="_images/menu12.png" src="_images/menu12.png" style="width: 30%;" /></a>
+<p class="caption"><strong>図 2.5</strong>: メニューの画面</p>
+</div>
+</div></blockquote>
+</dd>
+<dt><strong>コピー＆ペースト</strong></dt>
+<dd><p class="first">これは、文字列の切り貼りです。例えば、GNOME端末を2つ開いておき、片方の端末で実行したコマンドをもう一方の端末で実行するとき、キーボードから同じコマンドを入力するのが面倒なときなどに使います。</p>
+<dl class="docutils">
+<dt><strong>コピー</strong></dt>
+<dd>コピーしたい文字列の先頭にマウスカーソルを移動させ、左ボタンでドラッグしてコピーしたい位置の最後まで移動して、ボタンを離します。コピーした部分の文字列は白黒が反転して表示されます。ウィンドウの右端まで色の反転が起きた場合には、Enterキーを押したときに入力される「改行文字」もコピーされます。複数行のコピーも可能です。</dd>
+<dt><strong>ペースト</strong></dt>
+<dd>貼り付けたいウィンドウに移動してマウスの中央ボタンを押すと、コピーした内容の貼り付けが行えます。クライアントによって多少は異りますが、GNOME 端末の場合、貼り付けは「キーボードからの入力」と同じに扱われます。したがって、コピーした内容に改行文字が含まれている場合、貼り付けと同時にその内容が実行されてしまいます。</dd>
+</dl>
+<p class="last">この機能は、異るクライアント間でも行えることがほとんどですが、漢字などの全角文字の貼り付けが行えないケースもありますので注意して下さい。</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>2.4. X Windowの概要<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>X Window は、現在のコンピュータでは常識となった、GUI(Graphical User Intrface)を実現するためのソフトウエアシステムです。このGUIによって、画面上にあたかも、紙がばらばらと置かれているかのような状態で、紙を読んだり、紙に書いたりといった操作が行え、直感的にも分かりやすい操作が行えます。この紙に相当するのが、ウィンドウであり、複数のウィンドウを操作できるGUIをマルチウィンドウシステムともいいます。</p>
+<blockquote>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="_images/Xmech.png"><img alt="_images/Xmech.png" src="_images/Xmech.png" style="width: 30%;" /></a>
+<p class="caption"><strong>図 2.6</strong>: X window の構成</p>
+</div>
+</div></blockquote>
+<p>もともと、Unix は文字だけを表示する端末を想定して開発されていたため、マイクロソフトのWindowsのように、オペレーティングシステムそのものの中にマルチウィンドウ機能が組み込まれているわけではなく、X Window はオペレーティングシステムとは独立したソフトウエアとして開発されています。したがって、GUIを削除した状態でも、UNIXはきちんと動作するので、家電製品やロボットなどGUIを必要としない機器への組み込み用オペレーティングシステムとして利用することができます。</p>
+<blockquote>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="_images/Xmech2.png"><img alt="_images/Xmech2.png" src="_images/Xmech2.png" style="width: 50%;" /></a>
+<p class="caption"><strong>図 2.7</strong>: ネットワークを介したX window のりよう</p>
+</div>
+</div></blockquote>
+<p>また、図に示すようにX Window では表示を受け持つ「サーバ」が、個々のウインドウに対応する「クライアント」と通信を行って表示をするように設計されているため、例えば自分の使っているコンピュータに作図用のプログラムが
+無くても、別のコンピュータ上の作図用クライアントを動作させれば、あたかも自分の使っているコンピュータ上で作図プログラムが動いているように使うことができます。このX Windowのサーバは Windows 上で動くものもあり、この機能を使えば Windows から UNIX のクライアントを動かすといったことも実現できます。</p>
+<p>では、Xサーバが表示している個々のウィンドウを、移動させたり、手前に持ってきたり、サイズを変えたり、という操作はどのプロセスが行っているのでしょうか?これは、ウィンドウマネージャという特別なクライアントが、マウスの移動や、ボタンのクリックなどの「イベント」を見張っており、それに応じて個々のウィンドウの状態を変えているのです。</p>
+<p>このように、オペレーティングシステムと独立に設計されたX Window システムは、ネットワークを介した利用ができることや、ウィンドウマネージャを入
+れ換えたり、その動作を自分の好みに合わせて使うなどのことができるようになっており、非常に自由度が高いマルチウィンドウ環境を提供してくれます。</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">2. X Window</a><ul>
+<li><a class="reference internal" href="#id1">2.1. 実習内容</a></li>
+<li><a class="reference internal" href="#id2">2.2. 課題</a></li>
+<li><a class="reference internal" href="#id3">2.3. 実習の手順</a><ul>
+<li><a class="reference internal" href="#id4">2.3.1. X Windowの操作</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id5">2.4. X Windowの概要</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="chapter1.html"
+                        title="previous chapter">1. UNIX システムの基本的な利用法</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="chapter3.html"
+                        title="next chapter">3. UNIX システムの基本的な利用法</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/chapter2.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="chapter3.html" title="3. UNIX システムの基本的な利用法"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="chapter1.html" title="1. UNIX システムの基本的な利用法"
+             >previous</a> |</li>
+        <li><a href="index.html">jk2014 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Shigeyuki Oba.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>
