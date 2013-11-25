@@ -91,57 +91,16 @@ X Window に関しても、システムを使いやすくする目的で設定�
 </dl>
 </dd>
 <dt><strong>ウィンドウの部分の名前*</strong></dt>
-<dd><p class="first">画面内の各部分は以下のように呼ばれます(図ref{fg:desktop-layout}、ref{fg:win-layout})。</p>
-<img alt="_images/desktop-layout12.png" src="_images/desktop-layout12.png" />
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">scale:</th><td class="field-body">0.1</td>
-</tr>
-</tbody>
-</table>
-<img alt="_images/window-layout12.png" src="_images/window-layout12.png" />
-<table class="last docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">scale:</th><td class="field-body">0.1</td>
-</tr>
-</tbody>
-</table>
-</dd>
-<dt>begin{figure}[htbp]</dt>
-<dd><blockquote class="first">
-<div>leavevmode</div></blockquote>
-<p class="last">begin{center}</p>
-</dd>
-<dt>%#    scalebox{0.7}{includegraphics{./figs/X/desktop-layout07.eps}}</dt>
-<dd><blockquote class="first">
-<div>scalebox{0.45}{includegraphics{./figs/X/desktop-layout12.eps}}
-caption{デスクトップの各部分の名前}
-label{fg:desktop-layout}</div></blockquote>
-<p class="last">end{center}</p>
-</dd>
-</dl>
-<p>end{figure}</p>
+<dd><p class="first">画面内の各部分は以下のように呼ばれます(図2.1、2.2)。</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/desktop-layout12.png"><img alt="_images/desktop-layout12.png" src="_images/desktop-layout12.png" style="width: 70%;" /></a>
+<p class="caption"><strong>図 2.1</strong>: デスクトップの各部分の名前</p>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/window-layout12.png"><img alt="_images/window-layout12.png" src="_images/window-layout12.png" style="width: 70%;" /></a>
+<p class="caption"><strong>図 2.2</strong>: window の各部分の名前</p>
+</div>
 <dl class="docutils">
-<dt>begin{figure}[htbp]</dt>
-<dd><blockquote class="first">
-<div>leavevmode</div></blockquote>
-<p class="last">begin{center}</p>
-</dd>
-<dt>%#    scalebox{0.7}{includegraphics{./figs/X/window-layout07.eps}}</dt>
-<dd><blockquote class="first">
-<div>scalebox{0.45}{includegraphics{./figs/X/window-layout12.eps}}
-caption{window の各部分の名前}
-label{fg:win-layout}</div></blockquote>
-<p class="last">end{center}</p>
-</dd>
-</dl>
-<p>end{figure}</p>
-<blockquote>
-<div><dl class="docutils">
 <dt><strong>メニューバー</strong> :</dt>
 <dd>画面最上部の、メニューが配置された部分。</dd>
 <dt><strong>ルートウィンドウ</strong> :</dt>
@@ -155,18 +114,21 @@ label{fg:win-layout}</div></blockquote>
 <dt><strong>アプリケーションボタン</strong> :</dt>
 <dd>タイトルバー左端の四角い部分。</dd>
 <dt><strong>ミニマイズボタン</strong> :</dt>
-<dd>タイトルバー右端左部の四角い部分（<a href="#id5"><span class="problematic" id="id6">``</span></a>−&#8221;記号）。</dd>
+<dd>タイトルバー右端左部の四角い部分（&#8221;−&#8221;記号）。</dd>
 <dt><strong>マキシマイズボタン</strong> :</dt>
-<dd>タイトルバー右端中央の四角い部分（<a href="#id7"><span class="problematic" id="id8">``</span></a>□&#8221;記号）。</dd>
+<dd>タイトルバー右端中央の四角い部分（&#8221;□&#8221;記号）。</dd>
 <dt><strong>クローズボタン</strong> :</dt>
-<dd>タイトルバー右端右部の四角い部分（<a href="#id9"><span class="problematic" id="id10">``</span></a>Ｘ&#8221;記号）。</dd>
+<dd>タイトルバー右端右部の四角い部分（&#8221;Ｘ&#8221;記号）。</dd>
 <dt><strong>ボーダ</strong> :</dt>
 <dd>ウィンドウ四辺の縁。</dd>
 <dt><strong>マウスカーソル</strong> :</dt>
 <dd>マウスによって画面上で移動するマーク。状況に応じて形が変化する。</dd>
 </dl>
-</div></blockquote>
-<dl class="docutils">
+<div class="last figure align-center">
+<a class="reference internal image-reference" href="_images/focus-defocus12.png"><img alt="_images/focus-defocus12.png" src="_images/focus-defocus12.png" style="width: 70%;" /></a>
+<p class="caption"><strong>図 2.3</strong>: windowの状態</p>
+</div>
+</dd>
 <dt><strong>状態</strong></dt>
 <dd><p class="first">ウィンドウの状態としては以下の用語を用います。</p>
 <dl class="last docutils">
@@ -183,19 +145,17 @@ label{fg:win-layout}</div></blockquote>
 <blockquote>
 <div><dl class="docutils">
 <dt><strong>アイコン化</strong>:</dt>
-<dd>ウィンドウの表示を消し、代わりとなる小さな絵記号（アイコン）を表示することを指します。
-現在のシステムでは、ウィンドウのアイコンは常にタスクバー内に表示されています(図ref{fg:iconified})。
+<dd><blockquote class="first">
+<div>ウィンドウの表示を消し、代わりとなる小さな絵記号（アイコン）を表示することを指します。
+現在のシステムでは、ウィンドウのアイコンは常にタスクバー内に表示されています(図 2.4)。
 マウスカーソルをミニマイズボタンの上に移動させ、マウスの左ボタンをクリックすると、そのウィンドウが消え、表示はアイコンのみとなります。
 このアイコンは使用していないウィンドウを小さく表示して画面を整理するためのものです。Windows のアイコンは、コマンドやファイルに対応しますが、
-この場合のアイコンは、クライアントプロセスに対応することに注意してください。</dd>
-</dl>
-<p>begin{figure}[htbp]
-scalebox{1}{includegraphics{./figs/X/iconified12.eps}}</p>
-<blockquote>
-<div>caption{タスクバー内のアイコン}
-label{fg:iconified}</div></blockquote>
-<p>end{figure}</p>
-<dl class="docutils">
+この場合のアイコンは、クライアントプロセスに対応することに注意してください。</div></blockquote>
+<div class="last figure align-center">
+<a class="reference internal image-reference" href="_images/iconified12.png"><img alt="_images/iconified12.png" src="_images/iconified12.png" style="width: 70%;" /></a>
+<p class="caption"><strong>図 2.4</strong>: タスクバー内のアイコン</p>
+</div>
+</dd>
 <dt><strong>ウィンドウの復元</strong>:</dt>
 <dd>アイコンの上にマウスカーソルを移動し、左ボタンをクリックすると、アイコンが消え、元のウィンドウが元の位置に現れます。このときのウィンドウは最前面に表示され、他のウィンドウと重なる場合はそれらを隠します。</dd>
 <dt><strong>大きさの変更</strong>:</dt>
@@ -208,17 +168,15 @@ label{fg:iconified}</div></blockquote>
 </div></blockquote>
 <dl class="docutils">
 <dt><strong>ウィンドウメニューの実行</strong></dt>
-<dd>ウィンドウのアプリケーションボタンを押すと、図ref{fg:winmenu}のようなメニュー画面が表示されます。ウィンドウの最大化、最小化、最前面表示、移動、サイズの変更などは、このメニューを選択して行なうことも出来ます。</dd>
-<dt>begin{figure}[htbp]</dt>
-<dd><dl class="first last docutils">
-<dt>scalebox{0.6}{includegraphics{./figs/X/menu12.eps}}</dt>
-<dd>caption{メニューの画面}
-label{fg:win-menu}</dd>
-</dl>
+<dd><p class="first">ウィンドウのアプリケーションボタンを押すと、図 2.
+5のようなメニュー画面が表示されます。ウィンドウの最大化、最小化、最前面表示、移動、サイズの変更などは、このメニューを選択して行なうことも出来ます。</p>
+<blockquote class="last">
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="_images/menu12.png"><img alt="_images/menu12.png" src="_images/menu12.png" style="width: 30%;" /></a>
+<p class="caption"><strong>図 2.5</strong>: メニューの画面</p>
+</div>
+</div></blockquote>
 </dd>
-</dl>
-<p>end{figure}</p>
-<dl class="docutils">
 <dt><strong>コピー＆ペースト</strong></dt>
 <dd><p class="first">これは、文字列の切り貼りです。例えば、GNOME端末を2つ開いておき、片方の端末で実行したコマンドをもう一方の端末で実行するとき、キーボードから同じコマンドを入力するのが面倒なときなどに使います。</p>
 <dl class="docutils">
@@ -232,24 +190,22 @@ label{fg:win-menu}</dd>
 </dl>
 </div>
 </div>
-<div class="section" id="id11">
-<h2>2.4. X Windowの概要<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id5">
+<h2>2.4. X Windowの概要<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <p>X Window は、現在のコンピュータでは常識となった、GUI(Graphical User Intrface)を実現するためのソフトウエアシステムです。このGUIによって、画面上にあたかも、紙がばらばらと置かれているかのような状態で、紙を読んだり、紙に書いたりといった操作が行え、直感的にも分かりやすい操作が行えます。この紙に相当するのが、ウィンドウであり、複数のウィンドウを操作できるGUIをマルチウィンドウシステムともいいます。</p>
-<dl class="docutils">
-<dt>begin{figure}[htbp]</dt>
-<dd>includegraphics{./figs/X/Xmech.eps}
-caption{X window の構成}
-label{fig:xmech}</dd>
-</dl>
-<p>end{figure}</p>
+<blockquote>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="_images/Xmech.png"><img alt="_images/Xmech.png" src="_images/Xmech.png" style="width: 30%;" /></a>
+<p class="caption"><strong>図 2.6</strong>: X window の構成</p>
+</div>
+</div></blockquote>
 <p>もともと、Unix は文字だけを表示する端末を想定して開発されていたため、マイクロソフトのWindowsのように、オペレーティングシステムそのものの中にマルチウィンドウ機能が組み込まれているわけではなく、X Window はオペレーティングシステムとは独立したソフトウエアとして開発されています。したがって、GUIを削除した状態でも、UNIXはきちんと動作するので、家電製品やロボットなどGUIを必要としない機器への組み込み用オペレーティングシステムとして利用することができます。</p>
-<dl class="docutils">
-<dt>begin{figure}[htbp]</dt>
-<dd>includegraphics{./figs/X/Xmech2.eps}
-caption{ネットワークを介したX window の利用}
-label{fig:xmech2}</dd>
-</dl>
-<p>end{figure}</p>
+<blockquote>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="_images/Xmech2.png"><img alt="_images/Xmech2.png" src="_images/Xmech2.png" style="width: 50%;" /></a>
+<p class="caption"><strong>図 2.7</strong>: ネットワークを介したX window のりよう</p>
+</div>
+</div></blockquote>
 <p>また、図に示すようにX Window では表示を受け持つ「サーバ」が、個々のウインドウに対応する「クライアント」と通信を行って表示をするように設計されているため、例えば自分の使っているコンピュータに作図用のプログラムが
 無くても、別のコンピュータ上の作図用クライアントを動作させれば、あたかも自分の使っているコンピュータ上で作図プログラムが動いているように使うことができます。このX Windowのサーバは Windows 上で動くものもあり、この機能を使えば Windows から UNIX のクライアントを動かすといったことも実現できます。</p>
 <p>では、Xサーバが表示している個々のウィンドウを、移動させたり、手前に持ってきたり、サイズを変えたり、という操作はどのプロセスが行っているのでしょうか?これは、ウィンドウマネージャという特別なクライアントが、マウスの移動や、ボタンのクリックなどの「イベント」を見張っており、それに応じて個々のウィンドウの状態を変えているのです。</p>
@@ -273,7 +229,7 @@ label{fig:xmech2}</dd>
 <li><a class="reference internal" href="#id4">2.3.1. X Windowの操作</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id11">2.4. X Windowの概要</a></li>
+<li><a class="reference internal" href="#id5">2.4. X Windowの概要</a></li>
 </ul>
 </li>
 </ul>

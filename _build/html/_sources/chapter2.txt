@@ -1,24 +1,24 @@
-====
+================
 X Window
-====
+================
 
 実習内容
-====
+================
 #. X Window システムの理解
 #. ウインドウの操作
 #. GNOME 端末の操作
 
 課題
-====
+================
 他のウインドウで完全に隠されたウインドウを見つけて、最前面に表示させる方法についてレポートにまとめなさい。
 
 実習の手順
-====
+================
 解説を参考にしながら実習を進めて下さい。
 
 
 X Windowの操作
-----
+---------------
 X Window のデスクトップ環境（GUI, 解説参照）として、現在のシステムではGNOMEと呼ばれるソフトウェアを用いています。GNOMEは多くの機能を持ちますが、ここではごく基本的な機能について説明します。
 
 UNIX の特徴として、種々の設定が容易に変更できることが挙げられます。
@@ -44,35 +44,20 @@ X Window に関しても、システムを使いやすくする目的で設定�
 
 
 **ウィンドウの部分の名前***
-    画面内の各部分は以下のように呼ばれます(図\ref{fg:desktop-layout}、\ref{fg:win-layout})。
+    画面内の各部分は以下のように呼ばれます(図2.1、2.2)。
 
-    .. image:: chapter2_img/desktop-layout12.png
-    :scale: 0.1
-    
-    .. image:: chapter2_img/window-layout12.png
-    :scale: 0.1
+    .. figure:: chapter2_img/desktop-layout12.png
+     :width: 70%
+     :align: center
+
+     **図 2.1**: デスクトップの各部分の名前
 
 
-\begin{figure}[htbp]
-    \leavevmode
-  \begin{center}
-%#    \scalebox{0.7}{\includegraphics{./figs/X/desktop-layout07.eps}}
-    \scalebox{0.45}{\includegraphics{./figs/X/desktop-layout12.eps}}
-    \caption{デスクトップの各部分の名前}
-    \label{fg:desktop-layout}
-  \end{center}
-\end{figure}
-
-\begin{figure}[htbp]
-    \leavevmode
-  \begin{center}
-%#    \scalebox{0.7}{\includegraphics{./figs/X/window-layout07.eps}}
-    \scalebox{0.45}{\includegraphics{./figs/X/window-layout12.eps}}
-    \caption{window の各部分の名前}
-    \label{fg:win-layout}
-  \end{center}
-\end{figure}
-
+    .. figure:: chapter2_img/window-layout12.png
+     :width: 70%
+     :align: center
+     
+     **図 2.2**: window の各部分の名前
 
 
     **メニューバー** : 
@@ -94,13 +79,13 @@ X Window に関しても、システムを使いやすくする目的で設定�
         タイトルバー左端の四角い部分。
 
     **ミニマイズボタン** : 
-        タイトルバー右端左部の四角い部分（``−"記号）。
+        タイトルバー右端左部の四角い部分（"−"記号）。
 
     **マキシマイズボタン** : 
-        タイトルバー右端中央の四角い部分（``□"記号）。
+        タイトルバー右端中央の四角い部分（"□"記号）。
 
     **クローズボタン** : 
-        タイトルバー右端右部の四角い部分（``Ｘ"記号）。
+        タイトルバー右端右部の四角い部分（"Ｘ"記号）。
 
     **ボーダ** :
         ウィンドウ四辺の縁。
@@ -108,6 +93,13 @@ X Window に関しても、システムを使いやすくする目的で設定�
     **マウスカーソル** : 
         マウスによって画面上で移動するマーク。状況に応じて形が変化する。
 
+
+
+    .. figure:: chapter2_img/focus-defocus12.png
+     :width: 70%
+     :align: center
+
+     **図 2.3**: windowの状態
 
 
 **状態**
@@ -128,16 +120,17 @@ X Window に関しても、システムを使いやすくする目的で設定�
 
   **アイコン化**:
       ウィンドウの表示を消し、代わりとなる小さな絵記号（アイコン）を表示することを指します。
-      現在のシステムでは、ウィンドウのアイコンは常にタスクバー内に表示されています(図\ref{fg:iconified})。
+      現在のシステムでは、ウィンドウのアイコンは常にタスクバー内に表示されています(図 2.4)。
       マウスカーソルをミニマイズボタンの上に移動させ、マウスの左ボタンをクリックすると、そのウィンドウが消え、表示はアイコンのみとなります。
       このアイコンは使用していないウィンドウを小さく表示して画面を整理するためのものです。Windows のアイコンは、コマンドやファイルに対応しますが、
       この場合のアイコンは、クライアントプロセスに対応することに注意してください。
 
-  \begin{figure}[htbp]
-  \scalebox{1}{\includegraphics{./figs/X/iconified12.eps}}
-      \caption{タスクバー内のアイコン}
-      \label{fg:iconified}
-  \end{figure}
+    .. figure:: chapter2_img/iconified12.png
+     :width: 70%
+     :align: center
+
+     **図 2.4**: タスクバー内のアイコン
+
 
   **ウィンドウの復元**:
       アイコンの上にマウスカーソルを移動し、左ボタンをクリックすると、アイコンが消え、元のウィンドウが元の位置に現れます。このときのウィンドウは最前面に表示され、他のウィンドウと重なる場合はそれらを隠します。
@@ -154,15 +147,14 @@ X Window に関しても、システムを使いやすくする目的で設定�
 
 
 **ウィンドウメニューの実行**
-  ウィンドウのアプリケーションボタンを押すと、図\ref{fg:winmenu}のようなメニュー画面が表示されます。ウィンドウの最大化、最小化、最前面表示、移動、サイズの変更などは、このメニューを選択して行なうことも出来ます。
+  ウィンドウのアプリケーションボタンを押すと、図 2.
+  5のようなメニュー画面が表示されます。ウィンドウの最大化、最小化、最前面表示、移動、サイズの変更などは、このメニューを選択して行なうことも出来ます。
 
-\begin{figure}[htbp]
-  \scalebox{0.6}{\includegraphics{./figs/X/menu12.eps}}
-    \caption{メニューの画面}
-    \label{fg:win-menu}
-\end{figure}
+    .. figure:: chapter2_img/menu12.png
+     :width: 30%
+     :align: center
 
-
+     **図 2.5**: メニューの画面  
 
 
 **コピー＆ペースト**
@@ -181,22 +173,24 @@ X Window に関しても、システムを使いやすくする目的で設定�
 
 
 X Windowの概要
-====
+================
 X Window は、現在のコンピュータでは常識となった、GUI(Graphical User Intrface)を実現するためのソフトウエアシステムです。このGUIによって、画面上にあたかも、紙がばらばらと置かれているかのような状態で、紙を読んだり、紙に書いたりといった操作が行え、直感的にも分かりやすい操作が行えます。この紙に相当するのが、ウィンドウであり、複数のウィンドウを操作できるGUIをマルチウィンドウシステムともいいます。
 
-\begin{figure}[htbp]
-    \includegraphics{./figs/X/Xmech.eps}
-    \caption{X window の構成}
-    \label{fig:xmech}
-\end{figure}
+    .. figure:: chapter2_img/Xmech.png
+     :width: 30%
+     :align: center
+
+     **図 2.6**: X window の構成  
+
 
 もともと、Unix は文字だけを表示する端末を想定して開発されていたため、マイクロソフトのWindowsのように、オペレーティングシステムそのものの中にマルチウィンドウ機能が組み込まれているわけではなく、X Window はオペレーティングシステムとは独立したソフトウエアとして開発されています。したがって、GUIを削除した状態でも、UNIXはきちんと動作するので、家電製品やロボットなどGUIを必要としない機器への組み込み用オペレーティングシステムとして利用することができます。
 
-\begin{figure}[htbp]
-    \includegraphics{./figs/X/Xmech2.eps}
-    \caption{ネットワークを介したX window の利用}
-    \label{fig:xmech2}
-\end{figure}
+    .. figure:: chapter2_img/Xmech2.png
+     :width: 50%
+     :align: center
+
+     **図 2.7**: ネットワークを介したX window のりよう  
+
 
 また、図に示すようにX Window では表示を受け持つ「サーバ」が、個々のウインドウに対応する「クライアント」と通信を行って表示をするように設計されているため、例えば自分の使っているコンピュータに作図用のプログラムが
 無くても、別のコンピュータ上の作図用クライアントを動作させれば、あたかも自分の使っているコンピュータ上で作図プログラムが動いているように使うことができます。このX Windowのサーバは Windows 上で動くものもあり、この機能を使えば Windows から UNIX のクライアントを動かすといったことも実現できます。
