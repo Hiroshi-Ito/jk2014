@@ -11,9 +11,9 @@ Contents:
 .. toctree::
    :maxdepth: 3
    :numbered:
-   
-   chapter1
-   chapter2
+
+..   chapter1
+..   chapter2
    chapter3
 
 
@@ -25,4 +25,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
