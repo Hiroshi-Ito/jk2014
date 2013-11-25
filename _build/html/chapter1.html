@@ -24,8 +24,7 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="jk2014 0.1 documentation" href="index.html" />
-    <link rel="next" title="2. X Window" href="chapter2.html" />
-    <link rel="prev" title="情報基礎演習 ver.2014" href="index.html" /> 
+    <link rel="prev" title="Welcome to jk2014’s documentation!" href="index.html" /> 
   </head>
   <body>
     <div class="related">
@@ -35,10 +34,7 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="chapter2.html" title="2. X Window"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="index.html" title="情報基礎演習 ver.2014"
+          <a href="index.html" title="Welcome to jk2014’s documentation!"
              accesskey="P">previous</a> |</li>
         <li><a href="index.html">jk2014 0.1 documentation</a> &raquo;</li> 
       </ul>
@@ -62,7 +58,7 @@
 </div>
 <div class="section" id="id2">
 <h2>1.2. 実習の手順<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>ここではUNIXシステムにログインし、簡単な命令 (<tt class="docutils literal"><span class="pre">date</span></tt>, <tt class="docutils literal"><span class="pre">cal</span></tt>) を実行した後にログアウトするまでの様子を示します。わからない用語や操作が出てきた時は、後ろの解説を参考にしてください。</p>
+<p>ここではUNIXシステムにログインし、簡単な命令 (date, cal) を実行した後にログアウトするまでの様子を示します。わからない用語や操作が出てきた時は、後ろの解説を参考にしてください。</p>
 <p>情報環境機構教育用コンピュータシステムの端末PC（パーソナルコンピュータ（パソコン））では、仮想OS(Vine Linux 6)を用いてセンターのUNIXシステムにログインして利用することができます。</p>
 <div class="section" id="id3">
 <h3>1.2.1. システムの起動<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
@@ -74,46 +70,18 @@
 </div>
 <div class="section" id="id4">
 <h3>1.2.2. ログイン<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
-<ol class="arabic">
-<li><p class="first">Linuxというアイコンをダブルクリック(マウスの左ボタンを連続して2回押す)してください。図のようなユーザ認証画面がでてきます。</p>
-<blockquote>
-<div><div class="figure align-center">
-<a class="reference internal image-reference" href="_images/x-usermei-nyuryoku.png"><img alt="_images/x-usermei-nyuryoku.png" src="_images/x-usermei-nyuryoku.png" style="width: 70%;" /></a>
-<p class="caption"><strong>図 1.1</strong>: ユーザ認証画面</p>
-</div>
-</div></blockquote>
-</li>
-<li><p class="first"><strong>アカウント名</strong> (ユーザネーム：ユーザID ： ID name)を入力して下さい。途中で間違えたら、 <tt class="docutils literal"><span class="pre">バックスペース</span></tt> キーで間違えた部分を消去して、入力し直してください。</p>
-</li>
-<li><p class="first"><strong>パスワード</strong> を入力して下さい。パスワードは秘密のコードです。決して他人に教えてはいけません <a class="footnote-reference" href="#login1" id="id5">[1]</a> 。画面にはアスタリスク記号（＊）が入力した文字数だけ表示されます。途中で間違えたら、<tt class="docutils literal"><span class="pre">バックスペース</span></tt> キーで間違えた部分を消去して、入力し直してください。</p>
-</li>
-<li><p class="first"><tt class="docutils literal"><span class="pre">ログオン</span></tt> ボタンをクリックしてください <a class="footnote-reference" href="#login2" id="id6">[2]</a> 。</p>
-</li>
-<li><p class="first">ログインに成功すると画面が新しく現れます（ログイン画面）</p>
-</li>
+<ol class="arabic simple">
+<li>Linuxというアイコンをダブルクリック(マウスの左ボタンを連続して2回押す)してください。図のようなユーザ認証画面がでてきます。######図######ユーザ認証画面</li>
+<li><strong>アカウント名</strong> (ユーザネーム：ユーザID ： ID name)を入力して下さい。途中で間違えたら、 <tt class="docutils literal"><span class="pre">バックスペース</span></tt> キーで間違えた部分を消去して、入力し直してください。</li>
+<li><strong>パスワード</strong> を入力して下さい。パスワードは秘密のコードです。決して他人に教えてはいけませんfootnote{パスワードは定期的に変更することをおすすめします（<a class="reference internal" href="#passwd"><em>アカウント名とパスワード</em></a> 参照)。}。画面にはアスタリスク記号（＊）が入力した文字数だけ表示されます。途中で間違えたら、<tt class="docutils literal"><span class="pre">バックスペース</span></tt> キーで間違えた部分を消去して、入力し直してください。</li>
+<li>keytop{ログオン}ボタンをクリックしてくださいfootnote{ログインとログオン、ログアウトとログオフは同じ意味と考えて問題ありません。UNIXでは通常システムの利用開始・終了手続きをそれぞれログイン・ログアウトと呼び、Windowsではログオン・ログオフと呼びます。}。</li>
+<li>ログインに成功すると画面が新しく現れます（ログイン画面）</li>
 </ol>
 <p>これで、UNIXシステムが利用できる状態になりました。
 画面上ではX window と呼ばれるウィンドウシステムが動いていて、
 これを利用することになります。</p>
-<blockquote>
-<div><div class="figure align-center">
-<a class="reference internal image-reference" href="_images/login-shoki.png"><img alt="_images/login-shoki.png" src="_images/login-shoki.png" style="width: 70%;" /></a>
-<p class="caption"><strong>図 1.2</strong>: ログイン後の初期画面</p>
-</div>
-</div></blockquote>
-<p class="rubric">脚注</p>
-<table class="docutils footnote" frame="void" id="login1" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id5">[1]</a></td><td>パスワードは定期的に変更することをおすすめします（<a class="reference internal" href="#passwd"><em>アカウント名とパスワード</em></a> 参照)。</td></tr>
-</tbody>
-</table>
-<table class="docutils footnote" frame="void" id="login2" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id6">[2]</a></td><td>ログインとログオン、ログアウトとログオフは同じ意味と考えて問題ありません。UNIXでは通常システムの利用開始・終了手続きをそれぞれログイン・ログアウトと呼び、Windowsではログオン・ログオフと呼びます。</td></tr>
-</tbody>
-</table>
+<a class="reference internal image-reference" href="_images/login-shoki.png"><img alt="_images/login-shoki.png" src="_images/login-shoki.png" /></a>
+<p>ログイン後の初期画面</p>
 </div>
 <div class="section" id="x-window">
 <span id="xwindow"></span><h3>1.2.3. X windowの基本操作<a class="headerlink" href="#x-window" title="Permalink to this headline">¶</a></h3>
@@ -127,21 +95,19 @@
 ３つめの「中央ボタン」として使用します．</p>
 <p>2.
 ポインタを上部にあるバーに移動させ、「アプリケーション」を選択します。
-ポインタを「システムツール」に移動させると図1.3のようなメニューが現れます。
+ポインタを「システムツール」に移動させると図ref{fig:rootmenu}のようなメニューが現れます。
 マウスをドラッグして、「端末」を選択します。ウィンドウが開きます。
 ポインタは画面の背景(バックグラウンド：ルートウィンドウ)にいくと``矢印&#8221;になり、
-ウィンドウの中にあると <a href="#id7"><span class="problematic" id="id8">``</span></a>I&#8221; になります。</p>
-<blockquote>
-<div><div class="figure align-center">
-<a class="reference internal image-reference" href="_images/tanmatu-hiraku.png"><img alt="_images/tanmatu-hiraku.png" src="_images/tanmatu-hiraku.png" style="width: 30%;" /></a>
-<p class="caption"><strong>図 1.3</strong>: 「アプリケーション」のメニュー</p>
-</div>
-<div class="figure align-center">
-<a class="reference internal image-reference" href="_images/gnome-tanmatu.png"><img alt="_images/gnome-tanmatu.png" src="_images/gnome-tanmatu.png" style="width: 70%;" /></a>
-<p class="caption"><strong>図 1.4</strong>: GNOME端末</p>
-</div>
-</div></blockquote>
-<p>3.アクティブなウィンドウ <a class="footnote-reference" href="#x1" id="id9">[3]</a> は、今開けたウィンドウですが、
+ウィンドウの中にあると <a href="#id5"><span class="problematic" id="id6">``</span></a>I&#8221; になります。</p>
+<p>####図####
+「アプリケーション」のメニュー</p>
+<p>####図####
+GNOME端末</p>
+<p>3.アクティブなウィンドウ
+footnote{
+現在文字の入力の受付を行なっているウィンドウ
+}
+は、今開けたウィンドウですが、
 始めに開いていたウィンドウを左ボタンでクリックして、
 アクティブにして下さい。</p>
 <p>4.またアクティブウィンドウを元に戻して下さい。</p>
@@ -150,16 +116,9 @@
 あるいは
 ウィンドウ右上隅の&#8217;&#8216;×&#8217;&#8216;ボタンを左クリックすると
 ウィンドウは閉じられます。</p>
-<p class="rubric">脚注</p>
-<table class="docutils footnote" frame="void" id="x1" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id9">[3]</a></td><td>現在文字の入力の受付を行なっているウィンドウ</td></tr>
-</tbody>
-</table>
 </div>
-<div class="section" id="id10">
-<h3>1.2.4. UNIXの簡単なコマンドの実行<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id7">
+<h3>1.2.4. UNIXの簡単なコマンドの実行<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
 <p>ウィンドウ(GNOME端末)で
 簡単なUNIXのコマンドを実行してみましょう。
 コマンドを入力した後 <tt class="docutils literal"><span class="pre">Return</span></tt> キーをタイプします。
@@ -199,36 +158,33 @@ DATE: コマンドが見つかりません．
 [a0032246@vine6 ~]$</pre>
 </div>
 </div>
-<div class="section" id="logout2">
-<span id="id11"></span><h3>1.2.5. ログアウト<a class="headerlink" href="#logout2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id8">
+<h3>1.2.5. ログアウト<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>label{sec:logout2}</p>
 <p>1.
 ポインタを上部にあるバーに移動させ、「システム」を選択します。
 「システム」のメニューは図1.5のような内容になっています。</p>
-<blockquote>
-<div><div class="figure align-center">
-<a class="reference internal image-reference" href="_images/logout-menu.png"><img alt="_images/logout-menu.png" src="_images/logout-menu.png" style="width: 30%;" /></a>
-<p class="caption"><strong>図 1.4</strong>: 「システム」のメニュー</p>
-</div>
-</div></blockquote>
+<p>####図####
+「システム」のメニュー</p>
 <p>2.この状態でマウスの左ボタンを押しながらマウスを下へ動かして
 メニューの「シャットダウン」を選択します。</p>
 <p>3.今のウィンドウ画面が消えて、しばらくすると、Vine Linux 6が終了しWindows画面に戻ります。</p>
 </div>
 </div>
-<div class="section" id="id12">
-<h2>1.3. 情報環境機構の教育用コンピュータシステム<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id13">
-<h3>1.3.1. 計算機環境の概要<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id9">
+<h2>1.3. 情報環境機構の教育用コンピュータシステム<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id10">
+<h3>1.3.1. 計算機環境の概要<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
 <p>情報環境機構の各演習室には、数十台のクライアントと呼ばれる端末ＰＣが設置されています。
 クライアントで作業をしようとすれば、管理サーバが運転されている必要があります。</p>
-<p><a href="#id14"><span class="problematic" id="id15">*</span></a>管理サーバ： ソフトの保存、ファイルシステムの提供などの管理の仕事をする。
-<a href="#id16"><span class="problematic" id="id17">*</span></a>クライアント：利用者が実際に使うマシン。</p>
+<p><a href="#id11"><span class="problematic" id="id12">*</span></a>管理サーバ： ソフトの保存、ファイルシステムの提供などの管理の仕事をする。
+<a href="#id13"><span class="problematic" id="id14">*</span></a>クライアント：利用者が実際に使うマシン。</p>
 <p>教育用コンピュータシステムの管理サーバは24時間運転されるのであまり気にする必要はありません。
 このような計算機の構成をとる事により、利用者はどの端
 末PCからでも自分の作成したファイルを利用できます。</p>
 </div>
-<div class="section" id="id18">
-<h3>1.3.2. 電源の投入<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id15">
+<h3>1.3.2. 電源の投入<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
 <p>クライアントの電源は正面の
 四角形
 の押しボタンスイッチです。これは電源を入れる時
@@ -236,8 +192,8 @@ DATE: コマンドが見つかりません．
 橙色に、入っている時は緑色に点灯します。したがって、電源ランプが緑色に点灯し
 ている時は、原則として電源スイッチに触らないように注意して下さい。</p>
 </div>
-<div class="section" id="id19">
-<h3>1.3.3. キーの名前と記号<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id16">
+<h3>1.3.3. キーの名前と記号<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
 <p>この演習書で <tt class="docutils literal"><span class="pre">Control</span></tt> とか <tt class="docutils literal"><span class="pre">Ctrl</span></tt> と説
 明しているキーは、<tt class="docutils literal"><span class="pre">コントロール</span></tt> です。<tt class="docutils literal"><span class="pre">Return</span></tt> と説明して
 いるキーは、
@@ -247,8 +203,8 @@ parbox[c]{0.6cm}{scalebox{1.1}{includegraphics{./EPS/tab.eps}}}です。
 <tt class="docutils literal"><span class="pre">Escape</span></tt> とか <tt class="docutils literal"><span class="pre">Esc</span></tt> と説明しているキーは、
 <tt class="docutils literal"><span class="pre">エスケープ</span></tt> です。</p>
 </div>
-<div class="section" id="id20">
-<h3>1.3.4. ホスト名<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id17">
+<h3>1.3.4. ホスト名<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
 <p>各クライアントにはホスト名という名前が付けられています。
 クライアントは学内ネットワークによって結びつけられており、
 各マシンに異なるホスト名を登録することで管理サーバとクライアント、
@@ -256,8 +212,9 @@ parbox[c]{0.6cm}{scalebox{1.1}{includegraphics{./EPS/tab.eps}}}です。
 学内ネットワークは外部のネットワークと接続されており、
 適当な手続きによりクライアントと外部との通信も可能となります．</p>
 </div>
-<div class="section" id="id21">
-<span id="id22"></span><h3>1.3.5. UNIXとは<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id18">
+<h3>1.3.5. UNIXとは<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<p>label{sec:unix}</p>
 <p>UNIXはオペレーティングシステム(OS)の一つです。パソコンのWindows もOSの一つで
 す。OSの仕事は、たとえば、ファイルやディレクトリの管理やプログラムの起動など、
 計算機を利用する時に、必ず必要となる一連の作業を行なう基本的なソフトウェアで
@@ -270,21 +227,27 @@ parbox[c]{0.6cm}{scalebox{1.1}{includegraphics{./EPS/tab.eps}}}です。
 したがって、ある一つのUNIXに慣れれば、
 他のUNIXも簡単に利用できます。</p>
 <p>UNIXの特徴は、</p>
-<p><a href="#id23"><span class="problematic" id="id24">*</span></a>ファイルシステム: ファイルとディレクトリの概念。
-基本的には3.3.1節の図3.1に示すように木構造である。</p>
-<p><a href="#id25"><span class="problematic" id="id26">*</span></a>マルチタスク: 同時に複数のプロセス <a class="footnote-reference" href="#unix1" id="id27">[4]</a> が実行できます。
+<p><a href="#id19"><span class="problematic" id="id20">*</span></a>ファイルシステム: ファイルとディレクトリの概念。
+基本的には3.3.1節の図ref{fig:file-system}に示すように木構造である。</p>
+<p><a href="#id21"><span class="problematic" id="id22">*</span></a>マルチタスク: 同時に複数のプロセス
+footnote{
+プロセスとは、プログラムを実行する時に、
+メモリ上に読み込まれて、CPUが実行できる状態になったデータを指します。
+したがって、一つのプログラムで複数のプロセスが存在することがあります。
+}
+が実行できます。
 例えば、計算をさせながら論文を作成することができます。</p>
-<p><a href="#id28"><span class="problematic" id="id29">*</span></a>マルチユーザ: １台の計算機を同時に複数のユーザで利用することができます。
+<p><a href="#id23"><span class="problematic" id="id24">*</span></a>マルチユーザ: １台の計算機を同時に複数のユーザで利用することができます。
 ファイルやプロセスには持ち主を明確にして管理をしています。</p>
-<p><a href="#id30"><span class="problematic" id="id31">*</span></a>アプリケーション: フリーソフト(無料で配布されるソフトウェア）が多い
-<a href="#id32"><span class="problematic" id="id33">**</span></a>X-Window System
-<a href="#id34"><span class="problematic" id="id35">**</span></a>Editor(vi, Emacs)
-<a href="#id36"><span class="problematic" id="id37">**</span></a>DTP(LaTeX, Gnuplot, tgif, idraw...)
-<a href="#id38"><span class="problematic" id="id39">**</span></a>プログラミング(c , c++ , gfortran, g95, .....)</p>
+<p><a href="#id25"><span class="problematic" id="id26">*</span></a>アプリケーション: フリーソフト(無料で配布されるソフトウェア）が多い
+<a href="#id27"><span class="problematic" id="id28">**</span></a>X-Window System
+<a href="#id29"><span class="problematic" id="id30">**</span></a>Editor(vi, Emacs)
+<a href="#id31"><span class="problematic" id="id32">**</span></a>DTP(LaTeX, Gnuplot, tgif, idraw...)
+<a href="#id33"><span class="problematic" id="id34">**</span></a>プログラミング(c , c++ , gfortran, g95, .....)</p>
 <blockquote>
 <div>アプリケーション開発、科学技術計算、.....</div></blockquote>
 <dl class="docutils">
-<dt><a href="#id40"><span class="problematic" id="id41">**</span></a>通信、ネットワーク(e-mail, ftp, rlogin, NFS....)</dt>
+<dt><a href="#id35"><span class="problematic" id="id36">**</span></a>通信、ネットワーク(e-mail, ftp, rlogin, NFS....)</dt>
 <dd>遠隔ログイン、他の計算機とのファイルの共有、転送、電子メール</dd>
 </dl>
 <p>UNIXに関する最近の大きな変化として、パソコン上で動作するUNIXの普及が挙げられます。
@@ -298,16 +261,9 @@ OSの Linux に拠る所が大きく、 Linux とこれに関連するソフト�
 Windows でも最近のものはユーザ認証の機能を持ちますが、ネットワークなどを介し
 て複数のユーザが１つの計算機を同時に利用できる点で、マルチユーザはユーザ認証
 よりも上位の機能であることに注意して下さい。</p>
-<p class="rubric">脚注</p>
-<table class="docutils footnote" frame="void" id="unix1" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id27">[4]</a></td><td>プロセスとは、プログラムを実行する時に、メモリ上に読み込まれて、CPUが実行できる状態になったデータを指します。したがって、一つのプログラムで複数のプロセスが存在することがあります。</td></tr>
-</tbody>
-</table>
 </div>
 <div class="section" id="passwd">
-<span id="id42"></span><h3>1.3.6. アカウント名とパスワード<a class="headerlink" href="#passwd" title="Permalink to this headline">¶</a></h3>
+<span id="id37"></span><h3>1.3.6. アカウント名とパスワード<a class="headerlink" href="#passwd" title="Permalink to this headline">¶</a></h3>
 <p>UNIXはマルチユーザOSですので、
 マシンを使い始めるときは、
 使う人が誰なのか、
@@ -319,8 +275,8 @@ Windows でも最近のものはユーザ認証の機能を持ちますが、ネ
 パスワード（その本人しか知らない情報）
 を登録するのです。</p>
 </div>
-<div class="section" id="id43">
-<h3>1.3.7. パスワードの管理と変更<a class="headerlink" href="#id43" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id38">
+<h3>1.3.7. パスワードの管理と変更<a class="headerlink" href="#id38" title="Permalink to this headline">¶</a></h3>
 <p>教育用コンピュータシステムでは現在、WWWにより
 ネットワーク経由でのパスワード変更が可能となっています。</p>
 <p>センターの該当するページ
@@ -420,18 +376,18 @@ Windows でも最近のものはユーザ認証の機能を持ちますが、ネ
 <li><a class="reference internal" href="#id3">1.2.1. システムの起動</a></li>
 <li><a class="reference internal" href="#id4">1.2.2. ログイン</a></li>
 <li><a class="reference internal" href="#x-window">1.2.3. X windowの基本操作</a></li>
-<li><a class="reference internal" href="#id10">1.2.4. UNIXの簡単なコマンドの実行</a></li>
-<li><a class="reference internal" href="#logout2">1.2.5. ログアウト</a></li>
+<li><a class="reference internal" href="#id7">1.2.4. UNIXの簡単なコマンドの実行</a></li>
+<li><a class="reference internal" href="#id8">1.2.5. ログアウト</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id12">1.3. 情報環境機構の教育用コンピュータシステム</a><ul>
-<li><a class="reference internal" href="#id13">1.3.1. 計算機環境の概要</a></li>
-<li><a class="reference internal" href="#id18">1.3.2. 電源の投入</a></li>
-<li><a class="reference internal" href="#id19">1.3.3. キーの名前と記号</a></li>
-<li><a class="reference internal" href="#id20">1.3.4. ホスト名</a></li>
-<li><a class="reference internal" href="#id21">1.3.5. UNIXとは</a></li>
+<li><a class="reference internal" href="#id9">1.3. 情報環境機構の教育用コンピュータシステム</a><ul>
+<li><a class="reference internal" href="#id10">1.3.1. 計算機環境の概要</a></li>
+<li><a class="reference internal" href="#id15">1.3.2. 電源の投入</a></li>
+<li><a class="reference internal" href="#id16">1.3.3. キーの名前と記号</a></li>
+<li><a class="reference internal" href="#id17">1.3.4. ホスト名</a></li>
+<li><a class="reference internal" href="#id18">1.3.5. UNIXとは</a></li>
 <li><a class="reference internal" href="#passwd">1.3.6. アカウント名とパスワード</a></li>
-<li><a class="reference internal" href="#id43">1.3.7. パスワードの管理と変更</a></li>
+<li><a class="reference internal" href="#id38">1.3.7. パスワードの管理と変更</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#i">1.4. 付録 I (パニック脱出法)</a></li>
@@ -442,10 +398,7 @@ Windows でも最近のものはユーザ認証の機能を持ちますが、ネ
 
   <h4>Previous topic</h4>
   <p class="topless"><a href="index.html"
-                        title="previous chapter">情報基礎演習 ver.2014</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="chapter2.html"
-                        title="next chapter">2. X Window</a></p>
+                        title="previous chapter">Welcome to jk2014&#8217;s documentation!</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="_sources/chapter1.txt"
@@ -475,10 +428,7 @@ Windows でも最近のものはユーザ認証の機能を持ちますが、ネ
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="chapter2.html" title="2. X Window"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="index.html" title="情報基礎演習 ver.2014"
+          <a href="index.html" title="Welcome to jk2014’s documentation!"
              >previous</a> |</li>
         <li><a href="index.html">jk2014 0.1 documentation</a> &raquo;</li> 
       </ul>
